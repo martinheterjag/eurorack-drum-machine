@@ -1,6 +1,6 @@
 # eurorack-drum-machine
 
-This project uses cross-pi-gcc-9.2.0-0 to cross compile to a Rasberry Pi Zero.
+This project uses cross-pi-gcc-9.2.0-0 to cross compile to a Rasberry Pi Zero. I build on an Ubuntu VM that i use for Linux development.
 
 To build and install run the following commands:
 
