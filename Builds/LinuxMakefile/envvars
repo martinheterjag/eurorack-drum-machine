@@ -1,0 +1,10 @@
+# source this file to crosscompile
+
+export CXX=arm-linux-gnueabihf-g++ 
+export CPLUS_INCLUDE_PATH=/home/me/cross-pi-gcc-9.2.0-0/include/
+# make sure that /home/me/cross-pi-gcc-9.2.0-0/pkg-config/alsa.pc exists
+export PKG_CONFIG_PATH=/home/me/cross-pi-gcc-9.2.0-0/pkg-config
+export LDFLAGS=-latomic
+
+# Remove dependency to libcurl
+sed -e "s/libcurl//g" -i /home/me/Sampleplayer/Builds/LinuxMakefile/Makefile
