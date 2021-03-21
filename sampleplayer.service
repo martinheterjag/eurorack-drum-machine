@@ -1,0 +1,8 @@
+[Unit]
+Description=play samples when triggered by gpio
+
+[Service]
+ExecStart=/home/pi/sampleplayer/Sampleplayer
+
+[Install]
+WantedBy=multi-user.target
